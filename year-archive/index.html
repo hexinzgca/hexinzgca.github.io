@@ -19,7 +19,7 @@
 
 
 
-<title>Blog posts - AI4S Research</title>
+<title>AI4S Research</title>
 
 
 
@@ -65,7 +65,7 @@
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="AI4S Research"> 
-<meta property="og:title" content="Blog posts">
+<meta property="og:title" content="AI4S Research">
 
 
 
@@ -146,10 +146,7 @@
             <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/portfolio/">Portfolio</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/year-archive/">Blog</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/protect/">Protect</a></li>
+            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/year-archive/">Blog & Fast-learning</a></li>
           
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
@@ -172,69 +169,820 @@
 
   <div class="archive">
     
-      <h1 class="page__title">Blog posts</h1>
+      <h1 class="page__title"></h1>
     
     
 
+<!-- 筛选栏控制按钮 -->
+<button class="filter-toggle-btn">
+  <i class="fas fa-filter"></i> 按照[分类]/[标签]筛选 <i class="fas fa-chevron-down toggle-icon"></i>
+</button>
 
-  
-  
-    <h2 id="2025" class="archive__subtitle">2025</h2>
-    
-  
-  
-
-
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-
-    <h2 class="archive__item-title" itemprop="headline">
+<!-- 可折叠的筛选容器（默认隐藏） -->
+<div class="filter-collapse-container">
+  <!-- 合并筛选栏：一行/自动换行显示 -->
+  <div class="filter-container">
+    <!-- 分类筛选（蓝色系） -->
+    <div class="category-filter">
+      <span class="filter__label">分类：</span>
+      <button class="filter__item filter__item--active" data-category="all">全部</button>
       
-        <a href="https://hexinzgca.github.io/posts/2025/09/blog-post-1/" rel="permalink">An Brief Introduction to Electronic Stucture Problem
-</a>
       
+        
+        
+        
+        
+        
+          <button class="filter__item" data-category="入门">
+            入门 (1)
+          </button>
+        
+          <button class="filter__item" data-category="测试">
+            测试 (1)
+          </button>
+        
+          <button class="filter__item" data-category="调研">
+            调研 (5)
+          </button>
+        
+      
+    </div>
+
+    <!-- 标签筛选（绿色系） -->
+    <div class="tag-filter">
+      <span class="filter__label">标签：</span>
+      <button class="filter__item filter__item--active" data-tag="all">全部</button>
+      
+      
+        
+        
+        
+        
+        
+          <button class="filter__item" data-tag="入门">
+            入门 (2)
+          </button>
+        
+          <button class="filter__item" data-tag="公开">
+            公开 (1)
+          </button>
+        
+          <button class="filter__item" data-tag="私密">
+            私密 (5)
+          </button>
+        
+      
+    </div>
+  </div>
+</div>
+
+<!-- 文章归档逻辑 -->
+
+
+  
+  
+  
+    <h2 id="2025" class="archive__year-heading">
+      2025 年
     </h2>
     
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="入门" 
+       data-post-tags="入门" 
+       data-post-year="2025">
     
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+<!-- 1. 处理文章封面图 -->
+
+
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/%E5%85%A5%E9%97%A8/post-2/" rel="permalink">An Brief Introduction to Electronic Stucture Problem
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
 
 
   
 	  1 minute read
 	
-</p>
+
+      </p>
     
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2025-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2025
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 非加密文章：正常渲染摘要 -->
+          <p>简单地入门分子团簇的电子结构计算。</p>
+
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-09-01T00:00:00+00:00">September 01, 2025</time></p>
-        
-
-    
-    <p class="archive__item-excerpt" itemprop="description"><h4 id="pgto的表达和积分的计算">PGTO的表达和积分的计算</h4>
-<ol>
-  <li>归一化系数的计算
-对于一个一般的PGTO，我们使用记号 $\mid aAlmn\rangle=x^l y^m z^n\exp(-a(\vec{r}-\vec{A})^2)$来表达。<br />
-则首先，考虑一个一般的PGTO的归一化系数N:<br />
-\(\frac{1}{N^2}=\int x^{2l} y^{2m} z^{2n}\exp(-2a(\vec{r}-\vec{A})^2)\)
-利用公式：
-\(\int_{-\infty}^{\infty}x^{2n}e^{-\alpha x^2}=\sqrt{\frac{\pi}{\alpha}}\frac{(2n-1)!!}{(2\alpha)^n}\)
-所以：
-\(\frac{1}{N^2}=(\frac{\pi}{2\alpha})^{3/2}\frac{(2l-1)!!(2m-1)!!(2n-1)!!}{(4\alpha)^{l+m+n}}\)</li>
-</ol>
-
-</p>
-    
-    
+      </p>
     
 
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
   </article>
 </div>
+  </div>
+
+  
+  
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="" 
+       data-post-tags="入门" 
+       data-post-year="2025">
+    
+
+<!-- 1. 处理文章封面图 -->
 
 
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/post-1/" rel="permalink">局域相互作用与非局域相互作用——动力学中的量子效应
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
+
+
+  
+	  1 minute read
+	
+
+      </p>
+    
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2025-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2025
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 非加密文章：正常渲染摘要 -->
+          <p>介绍一些量子效应的引入。</p>
+
+
+        
+      </p>
+    
+
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
+  </article>
+</div>
+  </div>
+
+  
+  
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="调研" 
+       data-post-tags="私密" 
+       data-post-year="2025">
+    
+
+<!-- 1. 处理文章封面图 -->
+
+
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-5/" rel="permalink">有关于全同对称性的量子表示方法
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+        <span class="archive__item-lock" style="margin-left: 8px;">
+          <i class="fa fa-lock" aria-hidden="true" title="加密内容"></i>
+        </span>
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
+
+
+  
+	  less than 1 minute read
+	
+
+      </p>
+    
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2025-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2025
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 加密文章：移除第一段摘要，避免泄露内容 -->
+          
+           <!-- 移除第一段 -->
+          
+            <em>此内容受密码保护，点击查看需验证密码</em>
+          
+        
+      </p>
+    
+
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
+  </article>
+</div>
+  </div>
+
+  
+  
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="调研" 
+       data-post-tags="私密" 
+       data-post-year="2025">
+    
+
+<!-- 1. 处理文章封面图 -->
+
+
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-4/" rel="permalink">从经典到量子：随机过程与耗散系统的方程逻辑链及平衡分布
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+        <span class="archive__item-lock" style="margin-left: 8px;">
+          <i class="fa fa-lock" aria-hidden="true" title="加密内容"></i>
+        </span>
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
+
+
+  
+	  less than 1 minute read
+	
+
+      </p>
+    
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2025-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2025
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 加密文章：移除第一段摘要，避免泄露内容 -->
+          
+           <!-- 移除第一段 -->
+          
+            <em>此内容受密码保护，点击查看需验证密码</em>
+          
+        
+      </p>
+    
+
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
+  </article>
+</div>
+  </div>
+
+  
+  
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="调研" 
+       data-post-tags="私密" 
+       data-post-year="2025">
+    
+
+<!-- 1. 处理文章封面图 -->
+
+
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-3/" rel="permalink">[调研] 晶体材料表示方法在电镜表征中的应用与前景调研汇报
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+        <span class="archive__item-lock" style="margin-left: 8px;">
+          <i class="fa fa-lock" aria-hidden="true" title="加密内容"></i>
+        </span>
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
+
+
+  
+	  less than 1 minute read
+	
+
+      </p>
+    
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2025-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2025
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 加密文章：移除第一段摘要，避免泄露内容 -->
+          
+           <!-- 移除第一段 -->
+          
+            <em>此内容受密码保护，点击查看需验证密码</em>
+          
+        
+      </p>
+    
+
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
+  </article>
+</div>
+  </div>
+
+  
+  
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="调研" 
+       data-post-tags="私密" 
+       data-post-year="2025">
+    
+
+<!-- 1. 处理文章封面图 -->
+
+
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-2/" rel="permalink">[调研] 晶体材料表示方法在实际工程领域的应用研究：从催化到电子器件
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+        <span class="archive__item-lock" style="margin-left: 8px;">
+          <i class="fa fa-lock" aria-hidden="true" title="加密内容"></i>
+        </span>
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
+
+
+  
+	  less than 1 minute read
+	
+
+      </p>
+    
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2025-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2025
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 加密文章：移除第一段摘要，避免泄露内容 -->
+          
+           <!-- 移除第一段 -->
+          
+            <em>此内容受密码保护，点击查看需验证密码</em>
+          
+        
+      </p>
+    
+
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
+  </article>
+</div>
+  </div>
+
+  
+  
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="调研" 
+       data-post-tags="私密" 
+       data-post-year="2025">
+    
+
+<!-- 1. 处理文章封面图 -->
+
+
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-1/" rel="permalink">[调研] 晶体材料的神经网络表示方法研究：从序列信息到 3D 结构
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+        <span class="archive__item-lock" style="margin-left: 8px;">
+          <i class="fa fa-lock" aria-hidden="true" title="加密内容"></i>
+        </span>
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
+
+
+  
+	  less than 1 minute read
+	
+
+      </p>
+    
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2025-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2025
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 加密文章：移除第一段摘要，避免泄露内容 -->
+          
+           <!-- 移除第一段 -->
+          
+            <em>此内容受密码保护，点击查看需验证密码</em>
+          
+        
+      </p>
+    
+
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
+  </article>
+</div>
+  </div>
+
+  
+  
+  
+    <h2 id="2020" class="archive__year-heading">
+      2020 年
+    </h2>
+    
+  
+  
+  <div class="archive__post-container" 
+       data-post-categories="测试" 
+       data-post-tags="公开" 
+       data-post-year="2020">
+    
+
+<!-- 1. 处理文章封面图 -->
+
+
+<!-- 2. 处理文章标题（去除多余<p>标签） -->
+
+
+<!-- 3. 文章条目容器 -->
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- 显示封面图（仅网格布局） -->
+    
+
+    <!-- 文章标题 + 加密标记（仅显示锁图标，不弹窗） -->
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/%E6%B5%8B%E8%AF%95/test/" rel="permalink">笔记测试
+</a>
+      
+      <!-- 加密文章显示锁图标（无弹窗逻辑） -->
+      
+    </h2>
+
+    <!-- 显示阅读时间（若配置） -->
+    
+      <p class="page__meta">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        
+
+
+  
+	  5 minute read
+	
+
+      </p>
+    
+
+    <!-- 显示文章分类/发布信息（教学/出版物/普通文章区分） -->
+    
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+          Published:
+        </strong>
+        <time datetime="2020-09-01T00:00:00+00:00" itemprop="datePublished">
+          September 01, 2020
+        </time>
+      </p>
+    
+
+    <!-- 显示文章摘要（加密文章移除第一段，非加密正常显示） -->
+    
+      <p class="archive__item-excerpt" itemprop="description">
+        
+          <!-- 非加密文章：正常渲染摘要 -->
+          <h2 id="locations-of-key-filesdirectories">Locations of key files/directories</h2>
+
+
+        
+      </p>
+    
+
+    <!-- 显示引用/下载链接（仅出版物等类型） -->
+    
+  </article>
+</div>
+  </div>
+
+
+<!-- 筛选交互 JS（新增折叠控制逻辑） -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // 折叠/展开控制
+  const toggleBtn = document.querySelector('.filter-toggle-btn');
+  const collapseContainer = document.querySelector('.filter-collapse-container');
+  const toggleIcon = document.querySelector('.toggle-icon');
+  
+  // 默认隐藏筛选栏
+  collapseContainer.style.display = 'none';
+  
+  // 点击按钮切换显示状态
+  toggleBtn.addEventListener('click', function() {
+    const isHidden = collapseContainer.style.display === 'none';
+    collapseContainer.style.display = isHidden ? 'block' : 'none';
+    toggleIcon.classList.toggle('fa-chevron-down', !isHidden);
+    toggleIcon.classList.toggle('fa-chevron-up', isHidden);
+  });
+
+  // 原有分类筛选逻辑
+  const categoryButtons = document.querySelectorAll('.category-filter .filter__item');
+  const tagButtons = document.querySelectorAll('.tag-filter .filter__item');
+  const postContainers = document.querySelectorAll('.archive__post-container');
+  const yearHeadings = document.querySelectorAll('.archive__year-heading');
+
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const selectedCategory = this.getAttribute('data-category');
+      
+      categoryButtons.forEach(btn => btn.classList.remove('filter__item--active'));
+      this.classList.add('filter__item--active');
+
+      postContainers.forEach(container => {
+        const postCats = container.getAttribute('data-post-categories');
+        const postYear = container.getAttribute('data-post-year');
+        const yearTitle = document.getElementById(postYear);
+
+        if (selectedCategory === 'all') {
+          container.style.display = 'block';
+          yearTitle.style.display = 'block';
+        } else {
+          if (postCats.includes(selectedCategory)) {
+            container.style.display = 'block';
+            yearTitle.setAttribute('data-has-visible', 'true');
+          } else {
+            container.style.display = 'none';
+          }
+        }
+      });
+
+      if (selectedCategory !== 'all') {
+        yearHeadings.forEach(title => {
+          title.style.display = title.hasAttribute('data-has-visible') ? 'block' : 'none';
+          title.removeAttribute('data-has-visible');
+        });
+      }
+    });
+  });
+
+  // 原有标签筛选逻辑
+  tagButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const selectedTag = this.getAttribute('data-tag');
+      
+      tagButtons.forEach(btn => btn.classList.remove('filter__item--active'));
+      this.classList.add('filter__item--active');
+
+      postContainers.forEach(container => {
+        const postTags = container.getAttribute('data-post-tags');
+        const postYear = container.getAttribute('data-post-year');
+        const yearTitle = document.getElementById(postYear);
+
+        if (selectedTag === 'all') {
+          container.style.display = 'block';
+          yearTitle.style.display = 'block';
+        } else {
+          if (postTags.includes(selectedTag)) {
+            container.style.display = 'block';
+            yearTitle.setAttribute('data-has-visible', 'true');
+          } else {
+            container.style.display = 'none';
+          }
+        }
+      });
+
+      if (selectedTag !== 'all') {
+        yearHeadings.forEach(title => {
+          title.style.display = title.hasAttribute('data-has-visible') ? 'block' : 'none';
+          title.removeAttribute('data-has-visible');
+        });
+      }
+    });
+  });
+});
+</script>
 
   </div>
 </div>
@@ -281,7 +1029,7 @@
 
 <div class="page__footer-copyright">
   &copy; 2025 He, Xin, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-09-08
+  Site last updated 2025-09-14
 </div>
 
       </footer>
@@ -296,6 +1044,22 @@
 
 
 
+    <!-- 关键：在 HTML 中用 <style> 标签定义背景图，Liquid 会正确解析变量 -->
+    <!-- 在 _layouts/default.html 或引用背景图的 HTML 中 -->
+      <style>
+        body {
+          background-image: url('/images/background/light-bg.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+        }
+
+        /* 夜晚模式背景图（覆盖白天模式） */
+        html[data-theme="dark"] body {
+          background-image: url('/images/background/dark-bg.png') !important;
+        }
+      </style>
   </body>
 </html>
 

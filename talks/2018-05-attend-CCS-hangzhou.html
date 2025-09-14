@@ -152,10 +152,7 @@
             <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/portfolio/">Portfolio</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/year-archive/">Blog</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/protect/">Protect</a></li>
+            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/year-archive/">Blog & Fast-learning</a></li>
           
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
@@ -270,6 +267,42 @@
 </div>
 
   
+
+  <!-- 底部图片和赞助方logo区域 -->
+  <div class="sidebar-bottom-content">
+    <!-- 赞助方logo -->
+    
+      <div class="sponsors-section">
+        <h3 class="sponsors-title">Sponsors</h3>
+        <div class="sponsors-logos">
+          
+            <img src="/images/sponsors/ZGCA-logo.png" 
+                 alt="ZGCA" 
+                 class="sponsor-logo"
+                 title="ZGCA">
+          
+            <img src="/images/sponsors/PKU-logo.png" 
+                 alt="PKU" 
+                 class="sponsor-logo"
+                 title="PKU">
+          
+            <img src="/images/sponsors/THU-logo.png" 
+                 alt="THU" 
+                 class="sponsor-logo"
+                 title="THU">
+          
+        </div>
+      </div>
+    
+
+    <!-- 临时调试代码
+    <div class="debug">
+      sponsors存在吗？[{&quot;name&quot;=&gt;&quot;ZGCA&quot;, &quot;logo&quot;=&gt;&quot;ZGCA-logo.png&quot;}, {&quot;name&quot;=&gt;&quot;PKU&quot;, &quot;logo&quot;=&gt;&quot;PKU-logo.png&quot;}, {&quot;name&quot;=&gt;&quot;THU&quot;, &quot;logo&quot;=&gt;&quot;THU-logo.png&quot;}]
+      数量：3
+    </div> -->
+
+  </div>
+
   </div>
 
 
@@ -389,7 +422,7 @@
 
 <div class="page__footer-copyright">
   &copy; 2025 He, Xin, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-09-08
+  Site last updated 2025-09-14
 </div>
 
       </footer>
@@ -404,6 +437,22 @@
 
 
 
+    <!-- 关键：在 HTML 中用 <style> 标签定义背景图，Liquid 会正确解析变量 -->
+    <!-- 在 _layouts/default.html 或引用背景图的 HTML 中 -->
+      <style>
+        body {
+          background-image: url('/images/background/light-bg.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+        }
+
+        /* 夜晚模式背景图（覆盖白天模式） */
+        html[data-theme="dark"] body {
+          background-image: url('/images/background/dark-bg.png') !important;
+        }
+      </style>
   </body>
 </html>
 

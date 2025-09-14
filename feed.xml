@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://hexinzgca.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hexinzgca.github.io/" rel="alternate" type="text/html" /><updated>2025-09-08T03:03:16+00:00</updated><id>https://hexinzgca.github.io/feed.xml</id><title type="html">AI4S Research</title><subtitle>PhD. in Physical Chemistry and Theoretical Chemistry and Now AI4S</subtitle><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><entry><title type="html">An Brief Introduction to Electronic Stucture Problem</title><link href="https://hexinzgca.github.io/posts/2025/09/blog-post-1/" rel="alternate" type="text/html" title="An Brief Introduction to Electronic Stucture Problem" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/posts/2025/09/blog-post-1</id><content type="html" xml:base="https://hexinzgca.github.io/posts/2025/09/blog-post-1/"><![CDATA[<h4 id="pgto的表达和积分的计算">PGTO的表达和积分的计算</h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://hexinzgca.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hexinzgca.github.io/" rel="alternate" type="text/html" /><updated>2025-09-14T06:29:12+00:00</updated><id>https://hexinzgca.github.io/feed.xml</id><title type="html">AI4S Research</title><subtitle>PhD. in Physical Chemistry and Theoretical Chemistry and Now AI4S</subtitle><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><entry><title type="html">[调研] 晶体材料表示方法在电镜表征中的应用与前景调研汇报</title><link href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-3/" rel="alternate" type="text/html" title="[调研] 晶体材料表示方法在电镜表征中的应用与前景调研汇报" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-3</id><content type="html" xml:base="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-3/"><![CDATA[]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="调研" /><category term="私密" /><summary type="html"><![CDATA[摘要]]></summary></entry><entry><title type="html">[调研] 晶体材料的神经网络表示方法研究：从序列信息到 3D 结构</title><link href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-1/" rel="alternate" type="text/html" title="[调研] 晶体材料的神经网络表示方法研究：从序列信息到 3D 结构" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-1</id><content type="html" xml:base="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-1/"><![CDATA[]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="调研" /><category term="私密" /><summary type="html"><![CDATA[一、引言]]></summary></entry><entry><title type="html">[调研] 晶体材料表示方法在实际工程领域的应用研究：从催化到电子器件</title><link href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-2/" rel="alternate" type="text/html" title="[调研] 晶体材料表示方法在实际工程领域的应用研究：从催化到电子器件" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-2</id><content type="html" xml:base="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-2/"><![CDATA[]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="调研" /><category term="私密" /><summary type="html"><![CDATA[摘要]]></summary></entry><entry><title type="html">An Brief Introduction to Electronic Stucture Problem</title><link href="https://hexinzgca.github.io/%E5%85%A5%E9%97%A8/post-2/" rel="alternate" type="text/html" title="An Brief Introduction to Electronic Stucture Problem" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/%E5%85%A5%E9%97%A8/post-2</id><content type="html" xml:base="https://hexinzgca.github.io/%E5%85%A5%E9%97%A8/post-2/"><![CDATA[<p>简单地入门分子团簇的电子结构计算。</p>
+
+<h2 id="pgto的表达和积分的计算">PGTO的表达和积分的计算</h2>
+
 <ol>
   <li>
     <p>归一化系数的计算
@@ -112,4 +115,394 @@ s-s型积分，类似的需要通过laplace变换，这里不假解释了，结�
 \(K_{CD}=\exp(-\frac{cd}{c+d}\overline{CD}^2)\)
 广义的ERI积分通过对原子核运动的12个自由度求偏导数，最终可以降到s-s型积分。着同样转化为若干个二项式展开的乘积(准确来说是12个)，同样需要知道$K_{AB}$，$K_{CD}$，$F_0[\alpha_{eff}\overline{PQ}^2]$对于12个方向的任意阶的偏导数。着同样是通过Hermite多形式得到的。与V积分的约化过程相似。</p>
   </li>
-</ol>]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[PGTO的表达和积分的计算 归一化系数的计算 对于一个一般的PGTO，我们使用记号 $\mid aAlmn\rangle=x^l y^m z^n\exp(-a(\vec{r}-\vec{A})^2)$来表达。 则首先，考虑一个一般的PGTO的归一化系数N: \(\frac{1}{N^2}=\int x^{2l} y^{2m} z^{2n}\exp(-2a(\vec{r}-\vec{A})^2)\) 利用公式： \(\int_{-\infty}^{\infty}x^{2n}e^{-\alpha x^2}=\sqrt{\frac{\pi}{\alpha}}\frac{(2n-1)!!}{(2\alpha)^n}\) 所以： \(\frac{1}{N^2}=(\frac{\pi}{2\alpha})^{3/2}\frac{(2l-1)!!(2m-1)!!(2n-1)!!}{(4\alpha)^{l+m+n}}\)]]></summary></entry></feed>
+</ol>]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="入门" /><category term="入门" /><summary type="html"><![CDATA[简单地入门分子团簇的电子结构计算。]]></summary></entry><entry><title type="html">从经典到量子：随机过程与耗散系统的方程逻辑链及平衡分布</title><link href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-4/" rel="alternate" type="text/html" title="从经典到量子：随机过程与耗散系统的方程逻辑链及平衡分布" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-4</id><content type="html" xml:base="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-4/"><![CDATA[]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="调研" /><category term="私密" /><summary type="html"><![CDATA[序言：研究背景与逻辑框架]]></summary></entry><entry><title type="html">有关于全同对称性的量子表示方法</title><link href="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-5/" rel="alternate" type="text/html" title="有关于全同对称性的量子表示方法" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-5</id><content type="html" xml:base="https://hexinzgca.github.io/%E8%B0%83%E7%A0%94/background-5/"><![CDATA[]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="调研" /><category term="私密" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">局域相互作用与非局域相互作用——动力学中的量子效应</title><link href="https://hexinzgca.github.io/post-1/" rel="alternate" type="text/html" title="局域相互作用与非局域相互作用——动力学中的量子效应" /><published>2025-09-01T00:00:00+00:00</published><updated>2025-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/post-1</id><content type="html" xml:base="https://hexinzgca.github.io/post-1/"><![CDATA[<p>介绍一些量子效应的引入。</p>
+
+<h2 id="扩展高斯函数的引入">扩展高斯函数的引入</h2>
+<p>定义扩展高斯函数：</p>
+
+<p>\(g(x; \alpha,\beta, \mu) = \left( \beta\left(2\alpha (x-\mu)^2-1\right) + 1\right) \sqrt{\frac{\alpha}{\pi}} e^{-\alpha (x-\mu)^2}\)
+显然，当$\beta=0$的时候，$g$函数就是普通的gaussian。因为积分
+\(\begin{aligned}
+\int_{-\infty}^{\infty} (2\alpha x^2-1)e^{-\alpha x^2} {\rm d}x = 0
+\\
+\int_{-\infty}^{\infty} \sqrt{\frac{\alpha}{\pi}} e^{-\alpha x^2} = 1
+\end{aligned}\)
+所以不难有函数$g(x;\alpha,\beta,\mu)$也是归一化的。然而它却可能不是正定的，因为不难有
+\(x_0  = \sqrt{\frac{1}{2\alpha}(1-\frac{1}{\beta})} = q_\beta/\sqrt{\alpha}\)
+注意到当$\beta\in(0,1)$时无解，此时$g$函数恒为正定的函数。注意到利用误差函数
+\(\begin{aligned}
+&amp; \int_0^{x_0} [\beta(2\alpha x^2-1) + 1]\sqrt{\alpha/\pi} e^{-\alpha x^2} = \frac{1}{2} \text{erf}(\sqrt{\alpha}x_0) -\beta \sqrt{\alpha/\pi} x_0 e^{-\alpha x_0^2} 
+\\
+&amp; \int_{x_0}^\infty [\beta(2\alpha x^2-1) + 1] \sqrt{\alpha/\pi} e^{-\alpha x^2} = \beta \sqrt{\alpha/\pi} x_0 e^{-\alpha x_0^2} + \frac{1}{2} \text{erfc}(\sqrt{\alpha}x_0)
+\end{aligned}\)
+这里$\text{erfc}(\cdot)=1-\text{erf}(\cdot)$是互补误差函数。因此讨论当$\beta &lt; 0$时，
+\(\begin{aligned}
+&amp; \int_{-\infty}^{\infty} |g(x;\alpha,\beta)| {\rm dx} = 2 \int_{0}^{x_0} g(x;\alpha,\beta) {\rm dx} - 2 \int_{x_0}^\infty g(x;\alpha,\beta) {\rm dx}
+\\
+&amp; = -4\beta \sqrt{\alpha/\pi} x_0 e^{-\alpha x_0^2} + 2\text{erf}(\sqrt{\alpha}x_0) - 1
+\end{aligned}\)
+而当$\beta &gt; 1$时，则符号正好相反有：
+\(\begin{aligned}
+&amp; \int_{-\infty}^{\infty} |g(x;\alpha,\beta)| {\rm dx} = 4\beta \sqrt{\alpha/\pi} x_0 e^{-\alpha x_0^2} - 2\text{erf}(\sqrt{\alpha}x_0) + 1
+\end{aligned}\)
+因此总结下来有：
+$$
+I(\alpha, \beta) = \begin{cases}</p>
+<ul>
+  <li>\frac{4\beta}{\sqrt{\pi}} q_\beta e^{-q_\beta^2} + 2\text{erf}(q_\beta) - 1, &amp; \beta &lt; 0
+<br />
+1, &amp; 0 \le \beta \le 1
+<br />
+\frac{4\beta}{\sqrt{\pi}} q_\beta e^{-q_\beta^2} - 2\text{erf}(q_\beta) + 1, &amp;\beta &gt; 1
+\end{cases}
+$$
+可知仅仅与$\beta$相关，这里$\beta$称为量子性因子。</li>
+</ul>
+
+<p>可以分析，$g$曲线族经过不动点$(\mu\pm 1/\sqrt{2\alpha}, \sqrt{\alpha/(\pi e)})$，恰好$\sigma=1/\sqrt{2\alpha}$。当$\beta&lt;0$时，$\mu\pm1/\sqrt{2\alpha}$之间的概率积分增大，吸引相互作用；而当$\beta&gt;0$时，概率积分变小，排斥相互作用。</p>
+
+<p>全局准分布为：
+\(P(x) = \sum_k w_k g(x;\alpha_k,\beta_k,\mu_k),\quad \text{s.t.} \sum_k w_k = 1\)</p>
+
+<p>定义轨线过程：
+\(P(\{x_k\}_{k=0}^N) = \prod_{k=1}^{N} P(x_k|\{x_i\}_{i=0}^{k-1})\)
+为扩散过程，那么亦定义每一步的扩散通过$(\alpha_k,\beta_k,\mu_k)$三个参数控制。那么最后的概率是归一的。</p>
+
+<p>如果借此定义score-based model，$\alpha_k,\mu_k$通过经典的动力学控制，而$\beta_k$通过量子势（可以是Wigner形式，或者是Bohmian形式）。请你为我构建生成量子分布（构型分布或相空间分布）扩散模型。</p>]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="入门" /><summary type="html"><![CDATA[介绍一些量子效应的引入。]]></summary></entry><entry><title type="html">笔记测试</title><link href="https://hexinzgca.github.io/%E6%B5%8B%E8%AF%95/test/" rel="alternate" type="text/html" title="笔记测试" /><published>2020-09-01T00:00:00+00:00</published><updated>2020-09-01T00:00:00+00:00</updated><id>https://hexinzgca.github.io/%E6%B5%8B%E8%AF%95/test</id><content type="html" xml:base="https://hexinzgca.github.io/%E6%B5%8B%E8%AF%95/test/"><![CDATA[<h2 id="locations-of-key-filesdirectories">Locations of key files/directories</h2>
+
+<ul>
+  <li>Basic config options: _config.yml</li>
+  <li>Top navigation bar config: _data/navigation.yml</li>
+  <li>Single pages: _pages/</li>
+  <li>Collections of pages are .md or .html files in:
+    <ul>
+      <li>_publications/</li>
+      <li>_portfolio/</li>
+      <li>_posts/</li>
+      <li>_teaching/</li>
+      <li>_talks/</li>
+    </ul>
+  </li>
+  <li>Footer: _includes/footer.html</li>
+  <li>Static files (like PDFs): /files/</li>
+  <li>Profile image (can set in _config.yml): images/profile.png</li>
+</ul>
+
+<h2 id="tips-and-hints">Tips and hints</h2>
+
+<ul>
+  <li>Name a file “.md” to have it render in markdown, name it “.html” to render in HTML.</li>
+  <li>Go to the <a href="https://github.com/academicpages/academicpages.github.io/commits/master">commit list</a> (on your repo) to find the last version Github built with Jekyll.
+    <ul>
+      <li>Green check: successful build</li>
+      <li>Orange circle: building</li>
+      <li>Red X: error</li>
+      <li>No icon: not built</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+<ul>
+  <li><a href="https://shopify.github.io/liquid/tags/control-flow/">Liquid syntax guide</a></li>
+  <li><a href="https://docs.mathjax.org/en/latest/">MathJax Documentation</a></li>
+</ul>
+
+<h2 id="mathjax">MathJax</h2>
+
+<p>Support for MathJax Version 3.0 is included in the template:</p>
+
+\[\displaylines{
+\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
+\nabla \cdot B=0 \\\
+\nabla \times E= -\partial_tB \\\
+\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
+}\]
+
+<p>The default delimiters of <code class="language-plaintext highlighter-rouge">$$...$$</code> and <code class="language-plaintext highlighter-rouge">\\[...\\]</code> are supported for displayed mathematics, while <code class="language-plaintext highlighter-rouge">\\(...\\)</code> should be used for in-line mathematics (ex., \(a^2 + b^2 = c^2\))</p>
+
+<p><strong>Note</strong> that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although <a href="https://math.codidact.com/posts/278763/278772#answer-278772">some workarounds exist</a>.</p>
+
+<h2 id="markdown-guide">Markdown guide</h2>
+
+<p>Academic Pages uses <a href="https://kramdown.gettalong.org/index.html">kramdown</a> for Markdown rendering, which has some differences from other Markdown implementations such as GitHub’s. In addition to this guide, please see the <a href="https://kramdown.gettalong.org/syntax.html">kramdown Syntax page</a> for full documentation.</p>
+
+<h3 id="header-three">Header three</h3>
+
+<h4 id="header-four">Header four</h4>
+
+<h5 id="header-five">Header five</h5>
+
+<h6 id="header-six">Header six</h6>
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+<p>Single line blockquote:</p>
+
+<blockquote>
+  <p>Quotes are cool.</p>
+</blockquote>
+
+<h2 id="tables">Tables</h2>
+
+<h3 id="table-1">Table 1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Item</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#">John Doe</a></td>
+      <td>2016</td>
+      <td>Description of the item in the list</td>
+    </tr>
+    <tr>
+      <td><a href="#">Jane Doe</a></td>
+      <td>2019</td>
+      <td>Description of the item in the list</td>
+    </tr>
+    <tr>
+      <td><a href="#">Doe Doe</a></td>
+      <td>2022</td>
+      <td>Description of the item in the list</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="table-2">Table 2</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">ce</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ll5</td>
+      <td style="text-align: center">cell6</td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 id="definition-lists">Definition Lists</h2>
+
+<dl>
+  <dt>Definition List Title</dt>
+  <dd>Definition list division.</dd>
+  <dt>Startup</dt>
+  <dd>A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.</dd>
+  <dt>#dowork</dt>
+  <dd>Coined by Rob Dyrdek and his personal body guard Christopher “Big Black” Boykins, “Do Work” works as a self motivator, to motivating your friends.</dd>
+  <dt>Do It Live</dt>
+  <dd>I’ll let Bill O’Reilly <a href="https://www.youtube.com/watch?v=O_HyZ5aW76c" title="We'll Do It Live">explain</a> this one.</dd>
+</dl>
+
+<h2 id="unordered-lists-nested">Unordered Lists (Nested)</h2>
+
+<ul>
+  <li>List item one
+    <ul>
+      <li>List item one
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item four</li>
+        </ul>
+      </li>
+      <li>List item two</li>
+      <li>List item three</li>
+      <li>List item four</li>
+    </ul>
+  </li>
+  <li>List item two</li>
+  <li>List item three</li>
+  <li>List item four</li>
+</ul>
+
+<h2 id="ordered-list-nested">Ordered List (Nested)</h2>
+
+<ol>
+  <li>List item one
+    <ol>
+      <li>List item one
+        <ol>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item four</li>
+        </ol>
+      </li>
+      <li>List item two</li>
+      <li>List item three</li>
+      <li>List item four</li>
+    </ol>
+  </li>
+  <li>List item two</li>
+  <li>List item three</li>
+  <li>List item four</li>
+</ol>
+
+<h2 id="buttons">Buttons</h2>
+
+<p>Make any link standout more when applying the <code class="language-plaintext highlighter-rouge">.btn</code> class.</p>
+
+<h2 id="notices">Notices</h2>
+
+<p>Basic notices or call-outs are supported using the following syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**Watch out!**</span> You can also add notices by appending <span class="sb">`{: .notice}`</span> to the line following paragraph.
+{: .notice}
+</code></pre></div></div>
+
+<p>which wil render as:</p>
+
+<p class="notice"><strong>Watch out!</strong> You can also add notices by appending <code class="language-plaintext highlighter-rouge">{: .notice}</code> to the line following paragraph.</p>
+
+<h3 id="footnotes">Footnotes</h3>
+
+<p>Footnotes can be useful for clarifying points in the text, or citing information.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Markdown support numeric footnotes, as well as text as long as the values are unique.<sup id="fnref:note" role="doc-noteref"><a href="#fn:note" class="footnote" rel="footnote">2</a></sup></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is the regular text.[^1] This is more regular text.[^note]
+
+<span class="p">[</span><span class="ss">^1</span><span class="p">]:</span> <span class="sx">This</span> is the footnote itself.
+<span class="p">[</span><span class="ss">^note</span><span class="p">]:</span> <span class="sx">This</span> is another footnote.
+</code></pre></div></div>
+
+<h2 id="html-tags">HTML Tags</h2>
+
+<h3 id="address-tag">Address Tag</h3>
+
+<address>
+  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
+</address>
+
+<h3 id="anchor-tag-aka-link">Anchor Tag (aka. Link)</h3>
+
+<p>This is an example of a <a href="http://github.com" title="Github">link</a>.</p>
+
+<h3 id="abbreviation-tag">Abbreviation Tag</h3>
+
+<p>The abbreviation <abbr title="Cascading Style Sheets">CSS</abbr> stands for “Cascading Style Sheets”.</p>
+
+<h3 id="cite-tag">Cite Tag</h3>
+
+<p>“Code is poetry.” —<cite>Automattic</cite></p>
+
+<h3 id="code-tag">Code Tag</h3>
+
+<p>You will learn later on in these tests that <code class="language-plaintext highlighter-rouge">word-wrap: break-word;</code> will be your best friend.</p>
+
+<p>You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'Hello World!'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>or R:</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">print</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="strike-tag">Strike Tag</h3>
+
+<p>This tag will let you <strike>strikeout text</strike>.</p>
+
+<h3 id="emphasize-tag">Emphasize Tag</h3>
+
+<p>The emphasize tag should <em>italicize</em> text.</p>
+
+<h3 id="insert-tag">Insert Tag</h3>
+
+<p>This tag should denote <ins>inserted</ins> text.</p>
+
+<h3 id="keyboard-tag">Keyboard Tag</h3>
+
+<p>This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the <code class="language-plaintext highlighter-rouge">&lt;code&gt;</code> tag.</p>
+
+<h3 id="preformatted-tag">Preformatted Tag</h3>
+
+<p>This tag styles large blocks of code.</p>
+
+<pre>
+.post-title {
+  margin: 0 0 5px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.2;
+  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+}
+</pre>
+
+<h3 id="quote-tag">Quote Tag</h3>
+
+<p><q>Developers, developers, developers…</q> –Steve Ballmer</p>
+
+<h3 id="strong-tag">Strong Tag</h3>
+
+<p>This tag shows <strong>bold text</strong>.</p>
+
+<h3 id="subscript-tag">Subscript Tag</h3>
+
+<p>Getting our science styling on with H<sub>2</sub>O, which should push the “2” down.</p>
+
+<h3 id="superscript-tag">Superscript Tag</h3>
+
+<p>Still sticking with science and Isaac Newton’s E = MC<sup>2</sup>, which should lift the 2 up.</p>
+
+<h3 id="variable-tag">Variable Tag</h3>
+
+<p>This allows you to denote <var>variables</var>.</p>
+
+<hr />
+<p><strong>Footnotes</strong></p>
+
+<p>The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Such as this footnote. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:note" role="doc-endnote">
+      <p>When using text for footnotes markers, no spaces are permitted in the name. <a href="#fnref:note" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>He, Xin</name><email>hexin@bjzgca.edu.cn</email></author><category term="测试" /><category term="公开" /><summary type="html"><![CDATA[Locations of key files/directories]]></summary></entry></feed>

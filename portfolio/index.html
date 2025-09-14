@@ -19,7 +19,7 @@
 
 
 
-<title>Portfolio - AI4S Research</title>
+<title>AI4S Research</title>
 
 
 
@@ -65,7 +65,7 @@
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="AI4S Research"> 
-<meta property="og:title" content="Portfolio">
+<meta property="og:title" content="AI4S Research">
 
 
 
@@ -146,10 +146,7 @@
             <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/portfolio/">Portfolio</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/year-archive/">Blog</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/protect/">Protect</a></li>
+            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/year-archive/">Blog & Fast-learning</a></li>
           
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
@@ -172,25 +169,27 @@
 
   <div class="archive">
     
-      <h1 class="page__title">Portfolio</h1>
+      <h1 class="page__title"></h1>
     
     
-
 
 
   
 
+    <!-- 仅当 hidden 不是 true 时才显示 -->
+    
 
 
 
 
-<div class="list__item">
+
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://hexinzgca.github.io/portfolio/portfolio-1/" rel="permalink">Portfolio 1
+        <a href="https://hexinzgca.github.io/portfolio/portfolio-defense/" rel="permalink">[2024-Dec, Beijing]
 </a>
       
     </h2>
@@ -200,7 +199,7 @@
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p><br /><img src="/images/profile4.png" width="300" /></p>
+    <p class="archive__item-excerpt" itemprop="description"><p><br /><img src="/images/profile-defense.png" width="800" /></p>
 </p>
     
     
@@ -209,8 +208,51 @@
   </article>
 </div>
 
+  
+
+  
+
+    <!-- 仅当 hidden 不是 true 时才显示 -->
+    
 
 
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://hexinzgca.github.io/portfolio/portfolio-graduated2/" rel="permalink">[2025-July, PKU]
+</a>
+      
+    </h2>
+    
+    
+
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p><br /><img src="/images/profile-graduated2.png" width="500" /></p>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
 
   </div>
 </div>
@@ -257,7 +299,7 @@
 
 <div class="page__footer-copyright">
   &copy; 2025 He, Xin, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-09-08
+  Site last updated 2025-09-14
 </div>
 
       </footer>
@@ -272,6 +314,22 @@
 
 
 
+    <!-- 关键：在 HTML 中用 <style> 标签定义背景图，Liquid 会正确解析变量 -->
+    <!-- 在 _layouts/default.html 或引用背景图的 HTML 中 -->
+      <style>
+        body {
+          background-image: url('/images/background/light-bg.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+        }
+
+        /* 夜晚模式背景图（覆盖白天模式） */
+        html[data-theme="dark"] body {
+          background-image: url('/images/background/dark-bg.png') !important;
+        }
+      </style>
   </body>
 </html>
 

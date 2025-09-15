@@ -1,0 +1,1311 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>量子力学与电子结构计算新手快速入门 [0] - AI4S Research</title>
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-09-01T00:00:00+00:00">
+
+
+
+  <link rel="canonical" href="http://localhost:4000/09/01/electronic-structure-class-0th">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "He, Xin",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="AI4S Research"> 
+<meta property="og:title" content="量子力学与电子结构计算新手快速入门 [0]">
+
+  <meta property="og:type" content="article">
+
+
+  <meta property="og:description" name="description" content="本入门教程聚焦 “理论核心链条”：实验起源→基本假设→单粒子求解→多电子近似→计算方法，跳过冗余细节，直击关键逻辑。">
+
+
+  <meta property="og:url" content="http://localhost:4000/09/01/electronic-structure-class-0th">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="AI4S Research Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="http://localhost:4000/">AI4S Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/group/">Group</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Portfolio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog & Fast-learning</a></li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="He, Xin"  fetchpriority="high" />
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">He, Xin</h3>
+    
+    <p class="author__bio">PhD in Physical Chemistry and Theoretical Chemistry, with current research focusing on the crossover between AI and Science (AI4S)</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Beijing</li>
+      
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Zhongguancun Academy</li>
+      
+      
+      
+        <li><a href="mailto:hexin@bjzgca.edu.cn"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      
+            
+      
+        <li><a href="https://scholar.google.com/citations?user=i7LPhi0AAAAJ"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
+      
+      
+      
+      
+        <li><a href="http://orcid.org/0000-0002-5189-7204"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      
+                              
+      
+        <li><a href="https://www.researchgate.net/profile/Xin-He-55"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
+      
+      
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com/hexinzgca"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+              
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+
+  <!-- 底部图片和赞助方logo区域 -->
+  <div class="sidebar-bottom-content">
+    <!-- 赞助方logo -->
+    
+      <div class="sponsors-section">
+        <h3 class="sponsors-title">Acknowledgement</h3>
+        <div class="sponsors-logos">
+          
+            <img src="/images/sponsors/ZGCA-logo.png" 
+                 alt="ZGCA" 
+                 class="sponsor-logo"
+                 title="ZGCA">
+          
+            <img src="/images/sponsors/PKU-logo.png" 
+                 alt="PKU" 
+                 class="sponsor-logo"
+                 title="PKU">
+          
+            <img src="/images/sponsors/THU-logo.png" 
+                 alt="THU" 
+                 class="sponsor-logo"
+                 title="THU">
+          
+        </div>
+      </div>
+    
+
+    <!-- 临时调试代码
+    <div class="debug">
+      sponsors存在吗？[{&quot;name&quot;=&gt;&quot;ZGCA&quot;, &quot;logo&quot;=&gt;&quot;ZGCA-logo.png&quot;}, {&quot;name&quot;=&gt;&quot;PKU&quot;, &quot;logo&quot;=&gt;&quot;PKU-logo.png&quot;}, {&quot;name&quot;=&gt;&quot;THU&quot;, &quot;logo&quot;=&gt;&quot;THU-logo.png&quot;}]
+      数量：3
+    </div> -->
+
+  </div>
+
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="量子力学与电子结构计算新手快速入门 [0]">
+    <meta itemprop="description" content="本入门教程聚焦 “理论核心链条”：实验起源→基本假设→单粒子求解→多电子近似→计算方法，跳过冗余细节，直击关键逻辑。">
+    <meta itemprop="datePublished" content="September 01, 2025">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">量子力学与电子结构计算新手快速入门 [0]
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  5 minute read
+	
+</p>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-09-01T00:00:00+00:00">September 01, 2025</time></p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>本入门教程聚焦 “理论核心链条”：<strong>实验起源→基本假设→单粒子求解→多电子近似→计算方法</strong>，跳过冗余细节，直击关键逻辑。</p>
+
+<h2 id="1-引言从-为什么需要量子力学-开始">1. 引言：从 “为什么需要量子力学” 开始</h2>
+
+<p>电子结构计算的核心是<strong>用量子力学描述电子运动规律</strong>，进而解释物质的化学性质（如键能、光谱、反应活性）。经典物理（牛顿力学 + 麦克斯韦电磁学）无法解释微观粒子（电子、原子）的行为，量子力学由此诞生；而电子结构计算是量子力学在化学领域的 “实用化工具”—— 通过数学模型与数值方法，将抽象的量子理论转化为可计算的化学性质。</p>
+
+<h2 id="2-量子力学的起源经典物理的-三大困境-与量子化思想">2. 量子力学的起源：经典物理的 “三大困境” 与量子化思想</h2>
+
+<p>量子力学的诞生并非凭空想象，而是为解决经典物理无法解释的实验现象：</p>
+
+<h3 id="21-困境-1黑体辐射-紫外灾难-与能量量子化">2.1 困境 1：黑体辐射 ——“紫外灾难” 与能量量子化</h3>
+
+<ul>
+  <li>
+    <p><strong>实验现象</strong>：黑体（完全吸收电磁波的物体）加热时会辐射电磁波，其辐射强度随波长的分布的曲线，经典物理（瑞利 - 金斯公式）预测 “波长越短（紫外区），强度无穷大”，与实验完全矛盾（紫外灾难）。</p>
+  </li>
+  <li>
+    <p><strong>普朗克的突破（1900）</strong>：假设黑体辐射的能量不是连续的，而是以 “能量子” 为单位发射 / 吸收，即：</p>
+
+    <p>$E = h\nu$</p>
+
+    <p>其中 $h=6.626×10^{-34}\ \text{J·s}$（普朗克常数），$\nu$ 为辐射频率。</p>
+
+    <p>这一假设完美拟合实验，首次提出 “<strong>能量量子化</strong>”（微观世界能量不是连续变化，而是跳跃式的）。</p>
+  </li>
+</ul>
+
+<h3 id="22-困境-2光电效应--光的粒子性">2.2 困境 2：光电效应 —— 光的粒子性</h3>
+
+<ul>
+  <li>
+    <p><strong>实验现象</strong>：光照射金属表面时，只有当光的频率超过某一阈值（$\nu_0$），才能打出电子（光电子），与光强无关；且光电子动能随 $\nu$ 增大而增大。</p>
+  </li>
+  <li>
+    <p><strong>爱因斯坦的解释（1905）</strong>：将光视为 “光子”（能量为 $h\nu$ 的粒子），光子与电子碰撞时传递能量：</p>
+
+    <p>$E_{\text{动能}} = h\nu - W_0$</p>
+
+    <p>其中 $W_0=h\nu_0$（金属逸出功，电子脱离金属需克服的能量）。</p>
+
+    <p>这证明<strong>光兼具波动性与粒子性（波粒二象性）</strong>，为后续微观粒子的波粒二象性奠定基础。</p>
+  </li>
+</ul>
+
+<h3 id="23-困境-3氢原子光谱--原子能量的量子化">2.3 困境 3：氢原子光谱 —— 原子能量的量子化</h3>
+
+<ul>
+  <li>
+    <p><strong>实验现象</strong>：氢原子受激发后发射的光谱是 “线状谱”（只有特定波长的光），而非经典物理预测的 “连续谱”。</p>
+  </li>
+  <li>
+    <p><strong>玻尔的氢原子模型（1913）</strong>：假设电子绕核运动的轨道是 “量子化” 的（只有特定半径的轨道稳定），电子在轨道间跃迁时发射 / 吸收光子，能量差为：</p>
+
+    <p>$\Delta E = h\nu = E_m - E_n$</p>
+
+    <p>其中 $E_n = -\frac{13.6}{n^2}\ \text{eV}$（$n$ 为主量子数，$n=1,2,3…$）。</p>
+
+    <p>这首次将量子化思想引入原子结构，解释了线状谱的本质 ——<strong>原子内部能量是量子化的</strong>。</p>
+  </li>
+</ul>
+
+<h2 id="3-量子力学核心基本假设理论基石">3. 量子力学核心基本假设（理论基石）</h2>
+
+<p>量子力学无法通过经典物理推导，其基础是 5 条 “基本假设”（经无数实验验证的公理），所有理论与计算均源于此。</p>
+
+<h3 id="31-假设-1波函数假设--微观粒子的-状态描述">3.1 假设 1：波函数假设 —— 微观粒子的 “状态描述”</h3>
+
+<ul>
+  <li>
+    <p><strong>内容</strong>：微观体系（如电子）的状态可由一个<strong>波函数</strong> $\Psi(\boldsymbol{r},t)$ 完全描述，其中 $\boldsymbol{r}(x,y,z)$ 是粒子的空间坐标，$t$ 是时间。</p>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>物理意义</strong>：波函数本身无直接物理意义，但 $</td>
+          <td>\Psi(\boldsymbol{r},t)</td>
+          <td>^2 = \Psi^<em>(\boldsymbol{r},t)\Psi(\boldsymbol{r},t)$（$\Psi^</em>$ 是 $\Psi$ 的复共轭）表示 “$t$ 时刻在 $\boldsymbol{r}$ 处单位体积内找到粒子的概率”（概率密度）。</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p><strong>数学约束</strong>：波函数需满足 “归一化”（全空间找到粒子的总概率为 1）：</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>$\int_{\text{全空间}}</td>
+          <td>\Psi(\boldsymbol{r},t)</td>
+          <td>^2 d\tau = 1$</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>（$d\tau=dxdydz$ 为体积元），且需连续、单值、有限。</p>
+  </li>
+</ul>
+
+<h3 id="32-假设-2薛定谔方程假设--状态随时间的演化">3.2 假设 2：薛定谔方程假设 —— 状态随时间的演化</h3>
+
+<ul>
+  <li>
+    <p><strong>内容</strong>：波函数 $\Psi(\boldsymbol{r},t)$ 随时间的变化遵循<strong>薛定谔方程</strong>（量子力学的 “牛顿第二定律”）：</p>
+
+    <p>$i\hbar \frac{\partial \Psi}{\partial t} = \hat{H}\Psi$</p>
+
+    <p>其中 $\hbar = h/(2\pi)$（约化普朗克常数），$i$ 为虚数单位，$\hat{H}$ 是<strong>哈密顿算符</strong>（描述体系总能量的算符）。</p>
+  </li>
+  <li>
+    <p><strong>哈密顿算符的形式</strong>：对单粒子体系（如电子），总能量 = 动能 + 势能，对应算符：</p>
+
+    <p>$\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V(\boldsymbol{r},t)$</p>
+
+    <p>其中 $m$ 是粒子质量，$\nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}$（拉普拉斯算符，描述动能），$V(\boldsymbol{r},t)$ 是势能函数（如电子在核场中的库仑势能）。</p>
+  </li>
+  <li>
+    <p><strong>定态简化</strong>：若势能 $V$ 不随时间变化（如原子中电子），波函数可分离为 “空间部分” 与 “时间部分”：</p>
+
+    <p>$\Psi(\boldsymbol{r},t) = \psi(\boldsymbol{r})e^{-iE t/\hbar}$</p>
+
+    <p>代入薛定谔方程得<strong>定态薛定谔方程</strong>（仅含空间变量，是电子结构计算的核心方程）：</p>
+
+    <p>$\hat{H}\psi(\boldsymbol{r}) = E\psi(\boldsymbol{r})$</p>
+
+    <p>其中 $E$ 是体系的<strong>能量本征值</strong>（量子化的能量），$\psi(\boldsymbol{r})$ 是<strong>能量本征函数</strong>（对应某一能量状态的空间波函数）。</p>
+  </li>
+</ul>
+
+<h3 id="33-假设-3算符假设--力学量与算符的对应">3.3 假设 3：算符假设 —— 力学量与算符的对应</h3>
+
+<ul>
+  <li>
+    <p><strong>内容</strong>：微观体系的每个可观测力学量（如位置、动量、能量），都对应一个<strong>线性厄米算符</strong>（保证测量结果为实数）。</p>
+  </li>
+  <li>
+    <p><strong>核心对应关系</strong>（电子结构计算中常用）：</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>力学量</th>
+      <th>经典表达式</th>
+      <th>量子力学算符</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>位置（x 分量）</td>
+      <td>$x$</td>
+      <td>$\hat{x} = x$（乘以 x）</td>
+    </tr>
+    <tr>
+      <td>动量（x 分量）</td>
+      <td>$p_x = mv_x$</td>
+      <td>$\hat{p}_x = -i\hbar \frac{\partial}{\partial x}$</td>
+    </tr>
+    <tr>
+      <td>动能（x 分量）</td>
+      <td>$T_x = p_x^2/(2m)$</td>
+      <td>$\hat{T}_x = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}$</td>
+    </tr>
+    <tr>
+      <td>总能量</td>
+      <td>$H = T + V$</td>
+      <td>$\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + V$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="34-假设-4测量假设--量子力学的-概率性">3.4 假设 4：测量假设 —— 量子力学的 “概率性”</h3>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>内容</strong>：对某力学量 $\hat{A}$ 进行测量时，只能得到其<strong>本征值</strong>（$\hat{A}\phi_n = a_n\phi_n$，$a_n$ 为本征值，$\phi_n$ 为本征函数）；若体系处于波函数 $\Psi$，则测得 $a_n$ 的概率为 $</td>
+          <td>\int \phi_n^*\Psi d\tau</td>
+          <td>^2$。</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p><strong>期望值</strong>：若多次测量，力学量的平均结果（期望值）为：</p>
+
+    <p>$\langle A \rangle = \int \Psi^*\hat{A}\Psi d\tau$</p>
+
+    <p>（归一化波函数下）。</p>
+  </li>
+</ul>
+
+<h3 id="35-假设-5全同性原理--微观粒子的-不可区分性">3.5 假设 5：全同性原理 —— 微观粒子的 “不可区分性”</h3>
+
+<ul>
+  <li>
+    <p><strong>内容</strong>：同种微观粒子（如电子）是完全不可区分的，交换任意两个粒子的位置，体系的物理状态不变。</p>
+  </li>
+  <li>
+    <p><strong>对电子的影响</strong>：电子是费米子（自旋为半整数，$s=1/2$），其多电子波函数必须满足 “<strong>反对称性</strong>”—— 交换任意两个电子的坐标与自旋，波函数变号：</p>
+
+    <p>$\Psi(1,2) = -\Psi(2,1)$</p>
+
+    <p>（1、2 代表两个电子的 “全坐标”：空间坐标 + 自旋坐标）。这是后续多电子波函数构建的关键约束。</p>
+  </li>
+</ul>
+
+<h2 id="4-单粒子体系定态薛定谔方程的求解从简单到复杂">4. 单粒子体系定态薛定谔方程的求解（从简单到复杂）</h2>
+
+<p>定态薛定谔方程 $\hat{H}\psi = E\psi$ 是核心，但仅少数简单体系可精确求解。我们从 “一维势箱” 入手 —— 它是理解 “量子化” 的最直观模型，也是后续复杂体系的基础。</p>
+
+<h3 id="41-模型定义一维无限深势箱">4.1 模型定义：一维无限深势箱</h3>
+
+<ul>
+  <li><strong>势能函数</strong>：电子被限制在 $0 \leq x \leq L$ 的区域内，箱内势能为 0，箱外势能无穷大：</li>
+</ul>
+
+<p>$ 0 &amp; (0 &lt; x &lt; L) <br />
+\infty &amp; (x \leq 0 \text{ 或 } x \geq L)
+\end{cases}$$ $</p>
+
+<ul>
+  <li><strong>物理意义</strong>：模拟电子在 “有限空间内被束缚” 的情况（如共轭分子中的 $\pi$ 电子）。</li>
+</ul>
+
+<h3 id="42-方程求解分区域讨论">4.2 方程求解（分区域讨论）</h3>
+
+<h4 id="1箱外区域x-leq-0-或-x-geq-l">（1）箱外区域（$x \leq 0$ 或 $x \geq L$）</h4>
+
+<ul>
+  <li>
+    <p>势能 $V=\infty$，定态薛定谔方程：</p>
+
+    <p>$-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + \infty \cdot \psi = E\psi$</p>
+
+    <p>由于能量 $E$ 是有限值，只有 $\psi=0$ 能满足方程（否则左边为无穷大，右边有限，矛盾）。因此<strong>箱外波函数为 0</strong>（电子无法逃出势箱）。</p>
+  </li>
+</ul>
+
+<h4 id="2箱内区域0--x--l">（2）箱内区域（$0 &lt; x &lt; L$）</h4>
+
+<ul>
+  <li>
+    <p>势能 $V=0$，方程简化为：</p>
+
+    <p>$\frac{d^2\psi}{dx^2} = -\frac{2mE}{\hbar^2}\psi$</p>
+
+    <p>令 $k^2 = \frac{2mE}{\hbar^2}$（$k&gt;0$，因 $E&gt;0$），方程变为 “简谐振动方程”：</p>
+
+    <p>$\frac{d^2\psi}{dx^2} = -k^2\psi$</p>
+
+    <p>其通解为：</p>
+
+    <p>$\psi(x) = A\sin(kx) + B\cos(kx)$</p>
+
+    <p>（$A、B$ 为待定系数）。</p>
+  </li>
+</ul>
+
+<h4 id="3应用边界条件连续性">（3）应用边界条件（连续性）</h4>
+
+<ul>
+  <li>波函数需连续，箱内外边界处（$x=0$ 和 $x=L$）波函数相等：</li>
+</ul>
+
+<ol>
+  <li>
+    <p>$x=0$ 时：$\psi(0) = A\sin(0) + B\cos(0) = B = 0$（箱外 $\psi=0$），故 $B=0$，通解简化为 $\psi(x)=A\sin(kx)$。</p>
+  </li>
+  <li>
+    <p>$x=L$ 时：$\psi(L) = A\sin(kL) = 0$（箱外 $\psi=0$）。若 $A=0$，则 $\psi(x)=0$（无物理意义，电子消失），故必须 $\sin(kL)=0$，即：</p>
+
+    <p>$kL = n\pi \quad (n=1,2,3,…)$</p>
+
+    <p>（$n=0$ 时 $\psi=0$，舍去；$n$ 取负与正对应相同波函数，仅取正）。</p>
+  </li>
+</ol>
+
+<h4 id="4确定能量与波函数归一化">（4）确定能量与波函数（归一化）</h4>
+
+<ul>
+  <li>
+    <p>能量 $E$：由 $k = \frac{n\pi}{L}$ 和 $k^2 = \frac{2mE}{\hbar^2}$，得：</p>
+
+    <p>$E_n = \frac{n^2\pi^2\hbar^2}{2mL^2} \quad (n=1,2,3,…)$</p>
+
+    <p>结论：<strong>势箱中电子的能量是量子化的</strong>—— 只有 $n$ 取正整数时的能量值存在，$n$ 称为 “量子数”；$n=1$ 对应 “基态”（最低能量），$n&gt;1$ 对应 “激发态”。</p>
+  </li>
+  <li>
+    <p>波函数 $\psi(x)$：代入 $k = \frac{n\pi}{L}$ 和 $B=0$，得 $\psi(x)=A\sin\left(\frac{n\pi x}{L}\right)$；再用 “归一化条件” 求 $A$：</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>$\int_0^L</td>
+          <td>\psi(x)</td>
+          <td>^2 dx = \int_0^L A^2\sin^2\left(\frac{n\pi x}{L}\right) dx = 1$</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>利用积分公式 $\int_0^L \sin^2\left(\frac{n\pi x}{L}\right) dx = \frac{L}{2}$，得 $A^2 \cdot \frac{L}{2} = 1$，故 $A=\sqrt{\frac{2}{L}}$（取正，负号不影响概率）。</p>
+
+    <p>最终箱内波函数：</p>
+
+    <p>$\psi_n(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right)$</p>
+  </li>
+</ul>
+
+<h3 id="43-三维势箱扩展快速推导">4.3 三维势箱扩展（快速推导）</h3>
+
+<ul>
+  <li>
+    <p>若电子被限制在边长为 $a、b、c$ 的长方体势箱中，势能 $V(x,y,z)$ 在箱内为 0，箱外为 $\infty$。</p>
+  </li>
+  <li>
+    <p>定态薛定谔方程可分离变量（$\psi(x,y,z)=\psi_x(x)\psi_y(y)\psi_z(z)$），同理得：</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>能量（三维量子化，三个量子数 $n_x,n_y,n_z=1,2,3,…$）：</p>
+
+    <p>$E_{n_xn_yn_z} = \frac{h^2}{8m}\left(\frac{n_x^2}{a^2} + \frac{n_y^2}{b^2} + \frac{n_z^2}{c^2}\right)$</p>
+  </li>
+  <li>
+    <p>波函数：</p>
+
+    <p>$\psi_{n_xn_yn_z}(x,y,z) = \sqrt{\frac{8}{abc}}\sin\left(\frac{n_x\pi x}{a}\right)\sin\left(\frac{n_y\pi y}{b}\right)\sin\left(\frac{n_z\pi z}{c}\right)$</p>
+  </li>
+</ol>
+
+<ul>
+  <li>意义：三维体系的能量由多个量子数决定，可能出现 “简并态”（不同量子数对应相同能量），如正方体势箱（$a=b=c$）中，$(n_x,n_y,n_z)=(1,2,3)$ 和 $(1,3,2)$ 能量相同。</li>
+</ul>
+
+<h2 id="5-多电子体系从-无法精确解-到-关键近似">5. 多电子体系：从 “无法精确解” 到 “关键近似”</h2>
+
+<p>电子结构计算的核心是 “多电子体系”（如分子、固体），但多电子薛定谔方程<strong>无法精确求解</strong>，必须引入近似。</p>
+
+<h3 id="51-多电子薛定谔方程的复杂性">5.1 多电子薛定谔方程的复杂性</h3>
+
+<p>以 “N 电子原子” 为例（核电荷数为 Z）：</p>
+
+<ul>
+  <li>
+    <p>体系总哈密顿算符（核固定时，忽略核动能）：</p>
+
+    <p>$\hat{H} = \sum_{i=1}^N \left(-\frac{\hbar^2}{2m_e}\nabla_i^2 - \frac{Ze^2}{4\pi\varepsilon_0 r_i}\right) + \sum_{1 \leq i &lt; j \leq N} \frac{e^2}{4\pi\varepsilon_0 r_{ij}}$</p>
+
+    <p>其中：</p>
+
+    <ul>
+      <li>
+        <p>第一项：第 $i$ 个电子的动能算符；</p>
+      </li>
+      <li>
+        <p>第二项：第 $i$ 个电子与核的库仑吸引势能（$r_i$ 是电子 $i$ 到核的距离）；</p>
+      </li>
+      <li>
+        <p>第三项：电子间的库仑排斥势能（$r_{ij}$ 是电子 $i$ 与 $j$ 的距离）。</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>核心困难</strong>：电子间排斥项 $\frac{1}{r_{ij}}$ 包含两个电子的坐标（$r_{ij}=</td>
+          <td>\boldsymbol{r}_i - \boldsymbol{r}_j</td>
+          <td>$），导致薛定谔方程无法分离变量，无法精确求解。</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="52-关键近似-1玻恩---奥本海默近似born-oppenheimer-approximationbo-近似">5.2 关键近似 1：玻恩 - 奥本海默近似（Born-Oppenheimer Approximation，BO 近似）</h3>
+
+<ul>
+  <li>
+    <p><strong>物理依据</strong>：核的质量（$m_N \approx 10^3 \sim 10^5 m_e$）远大于电子质量，核的运动速度远慢于电子。因此，可 “冻结核的位置”，将 “核运动” 与 “电子运动” 分离 —— 电子在固定的核构型下快速运动，核在电子形成的 “势能面” 上缓慢运动。</p>
+  </li>
+  <li>
+    <p><strong>数学结果</strong>：</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>体系总波函数分离为 “电子波函数” 与 “核波函数”：$\Psi_{\text{总}} = \psi_{\text{电子}}(\boldsymbol{r}<em>1…\boldsymbol{r}_N; \boldsymbol{R}_1…\boldsymbol{R}_M) \cdot \chi</em>{\text{核}}(\boldsymbol{R}_1…\boldsymbol{R}_M)$（$\boldsymbol{R}$ 为核坐标）；</p>
+  </li>
+  <li>
+    <p>电子运动遵循 “电子薛定谔方程”（核坐标视为参数）：</p>
+
+    <p>$\hat{H}<em>{\text{电子}} \psi</em>{\text{电子}} = E_{\text{电子}} \psi_{\text{电子}}$</p>
+
+    <p>其中 $\hat{H}<em>{\text{电子}}$ 是电子哈密顿算符（不含核动能），$E</em>{\text{电子}}$ 是电子能量，也是核运动的势能（势能面）。</p>
+  </li>
+</ol>
+
+<ul>
+  <li><strong>意义</strong>：BO 近似是电子结构计算的 “基石”—— 所有分子电子结构计算（如 HF、DFT）均基于 BO 近似，将问题简化为 “固定核构型下求解电子波函数与能量”。</li>
+</ul>
+
+<h3 id="53-关键近似-2单电子近似hartree-近似">5.3 关键近似 2：单电子近似（Hartree 近似）</h3>
+
+<ul>
+  <li>
+    <p><strong>核心思想</strong>：将 “多电子问题” 简化为 “单电子问题”—— 每个电子在 “核势场 + 其他所有电子的平均势场” 中独立运动，忽略电子间的瞬时相互作用（仅考虑平均作用）。</p>
+  </li>
+  <li>
+    <p><strong>数学表达</strong>：假设多电子波函数是 “单电子波函数的乘积”（哈特 ree 乘积）：</p>
+
+    <p>$\psi_{\text{多电子}}(\boldsymbol{r}<em>1…\boldsymbol{r}_N) = \prod</em>{i=1}^N \phi_i(\boldsymbol{r}_i)$</p>
+
+    <p>其中 $\phi_i(\boldsymbol{r}_i)$ 是第 $i$ 个电子的 “单电子波函数”（轨道）。</p>
+  </li>
+  <li>
+    <p><strong>局限</strong>：哈特 ree 乘积不满足电子波函数的 “反对称性”（全同性原理），需进一步修正为 “Slater 行列式”（见 6.1 节）。</p>
+  </li>
+</ul>
+
+<h2 id="6-电子结构计算核心方法从-近似-到-实用">6. 电子结构计算核心方法：从 “近似” 到 “实用”</h2>
+
+<p>电子结构计算方法按 “近似程度” 分为 “从头算方法”（仅用物理常数，无经验参数）和 “半经验方法”（引入实验参数）。我们聚焦最核心的两种从头算方法：HF 和 DFT。</p>
+
+<h3 id="61-哈特利---福克方法hartree-fockhf单电子近似的-精确化">6.1 哈特利 - 福克方法（Hartree-Fock，HF）：单电子近似的 “精确化”</h3>
+
+<ul>
+  <li><strong>修正哈特 ree 近似的缺陷</strong>：用 “Slater 行列式” 描述多电子波函数，满足反对称性。对闭壳层体系（电子成对，自旋相反），Slater 行列式为：</li>
+</ul>
+
+<p>\($\phi_1(\boldsymbol{r}_1)\alpha(1) &amp; \phi_1(\boldsymbol{r}_1)\beta(1) &amp; \phi_2(\boldsymbol{r}_1)\alpha(1) &amp; ... &amp; \phi_{N/2}(\boldsymbol{r}_1)\beta(1) \\
+\phi_1(\boldsymbol{r}_2)\alpha(2) &amp; \phi_1(\boldsymbol{r}_2)\beta(2) &amp; \phi_2(\boldsymbol{r}_2)\alpha(2) &amp; ... &amp; \phi_{N/2}(\boldsymbol{r}_2)\beta(2) \\
+\vdots &amp; \vdots &amp; \vdots &amp; ... &amp; \vdots \\
+\phi_1(\boldsymbol{r}_N)\alpha(N) &amp; \phi_1(\boldsymbol{r}_N)\beta(N) &amp; \phi_2(\boldsymbol{r}_N)\alpha(N) &amp; ... &amp; \phi_{N/2}(\boldsymbol{r}_N)\beta(N)
+\end{vmatrix}\)<br />
+其中 $\alpha、\beta$ 是电子的自旋波函数（自旋向上/向下），$\phi_i$ 是“空间轨道”，每个空间轨道容纳2个自旋相反的电子。
+$$$</p>
+
+<ul>
+  <li>
+    <p><strong>HF 方程的推导思路（变分原理）</strong>：</p>
+
+    <p>变分原理：“体系的任意试探波函数的能量期望值，都大于等于体系的真实基态能量”。将 Slater 行列式作为试探波函数，对能量期望值求极小值，可推导出<strong>HF 方程</strong>（单电子方程）：</p>
+
+    <p>$\hat{F}_i \phi_i = \varepsilon_i \phi_i$</p>
+
+    <p>其中：</p>
+
+    <ul>
+      <li>
+        <p>$\hat{F}_i$ 是第 $i$ 个电子的 “Fock 算符”（包含核势场、其他电子的平均库仑势场、交换势场）；</p>
+      </li>
+      <li>
+        <p>$\varepsilon_i$ 是 “轨道能量”；</p>
+      </li>
+      <li>
+        <p>$\phi_i$ 是 “分子轨道”（单电子波函数）。</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>HF 的核心特点</strong>：</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>考虑了 “交换能”（电子间因自旋相同而产生的量子排斥，源于波函数反对称性）；</p>
+  </li>
+  <li>
+    <p>忽略了 “相关能”（电子间瞬时的相互作用，HF 能量比真实能量高，因未考虑相关能）；</p>
+  </li>
+  <li>
+    <p>自洽场（SCF）迭代求解：Fock 算符依赖于分子轨道，需先假设初始轨道→计算 Fock 算符→求解 HF 方程得新轨道→重复至轨道与能量收敛（自洽）。</p>
+  </li>
+</ol>
+
+<h3 id="62-密度泛函理论density-functional-theorydft从-波函数-到-电子密度-的革命">6.2 密度泛函理论（Density Functional Theory，DFT）：从 “波函数” 到 “电子密度” 的革命</h3>
+
+<ul>
+  <li><strong>核心思想（ Hohenberg-Kohn 定理 ）</strong>：</li>
+</ul>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>多电子体系的基态能量由 “电子密度 $\rho(\boldsymbol{r})$” 唯一决定（$\rho(\boldsymbol{r}) = N\int…\int</td>
+          <td>\Psi(\boldsymbol{r},\boldsymbol{r}_2…\boldsymbol{r}_N)</td>
+          <td>^2 d\boldsymbol{r}_2…d\boldsymbol{r}_N$），无需波函数；</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>变分原理适用于电子密度：对任意试探密度 $\rho(\boldsymbol{r})$，其能量期望值 ≥ 真实基态能量。</li>
+</ol>
+
+<ul>
+  <li>
+    <p><strong>Kohn-Sham 方程（DFT 的实用形式）</strong>：</p>
+
+    <p>为简化计算，引入 “Kohn-Sham（KS）轨道”$\phi_i$，假设电子密度由 KS 轨道构成（类似 HF 的单电子轨道）：</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>$\rho(\boldsymbol{r}) = \sum_{i=1}^N</td>
+          <td>\phi_i(\boldsymbol{r})</td>
+          <td>^2$</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>进而推导出<strong>KS 方程</strong>（与 HF 方程形式相似，但物理意义不同）：</p>
+
+    <p>$\left[ -\frac{\hbar^2}{2m_e}\nabla^2 + V_{\text{核}}(\boldsymbol{r}) + V_{\text{库仑}}(\boldsymbol{r}) + V_{\text{XC}}(\boldsymbol{r}) \right] \phi_i = \varepsilon_i \phi_i$</p>
+
+    <p>其中：</p>
+
+    <ul>
+      <li>
+        <p>$V_{\text{核}}$：核势场；</p>
+      </li>
+      <li>
+        <p>$V_{\text{库仑}}$：电子间平均库仑势场（与 HF 相同）；</p>
+      </li>
+      <li>
+        <p>$V_{\text{XC}}$：交换相关势场（包含交换能与相关能，是 DFT 的核心 —— 不同泛函对应不同的 $V_{\text{XC}}$，如 LDA、GGA、Hybrid 泛函）。</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>DFT 的优势</strong>：</p>
+
+    <p>计算量远小于 HF（尤其大体系），且通过选择合适的泛函（如 B3LYP），可同时包含交换能与相关能，精度接近 post-HF 方法（如 MP2），是目前分子与固体电子结构计算的 “主流方法”。</p>
+  </li>
+</ul>
+
+<h3 id="63-方法对比新手快速选择">6.3 方法对比（新手快速选择）</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>方法</th>
+      <th>优点</th>
+      <th>缺点</th>
+      <th>适用场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HF</td>
+      <td>理论严谨，无经验参数</td>
+      <td>忽略相关能，精度有限</td>
+      <td>小体系基础计算、轨道分析</td>
+    </tr>
+    <tr>
+      <td>DFT（B3LYP）</td>
+      <td>计算量小，精度高</td>
+      <td>泛函选择依赖经验</td>
+      <td>分子结构、反应能、光谱</td>
+    </tr>
+    <tr>
+      <td>post-HF（MP2）</td>
+      <td>包含部分相关能，精度高</td>
+      <td>计算量大，不适用大体系</td>
+      <td>小体系高精度计算（如键能）</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="7-核心逻辑链条总结快速回顾">7. 核心逻辑链条总结（快速回顾）</h2>
+
+<ol>
+  <li>
+    <p><strong>实验驱动理论</strong>：经典物理无法解释黑体辐射、光电效应等实验→量子化思想诞生→量子力学基本假设确立；</p>
+  </li>
+  <li>
+    <p><strong>单粒子求解奠基</strong>：定态薛定谔方程→一维势箱精确解→理解能量量子化与波函数；</p>
+  </li>
+  <li>
+    <p><strong>多电子近似突破</strong>：多电子方程无法精确解→BO 近似（分离核与电子）→单电子近似（分离电子）；</p>
+  </li>
+  <li>
+    <p><strong>计算方法实用化</strong>：HF（单电子近似 + 反对称性，缺相关能）→DFT（电子密度为变量，含相关能，计算量小）→成为电子结构计算主流。</p>
+  </li>
+</ol>
+
+<h2 id="8-后续学习建议从理论到实践">8. 后续学习建议（从理论到实践）</h2>
+
+<ol>
+  <li>
+    <p><strong>理论深化</strong>：阅读《量子化学》（Atkins 或 McQuarrie），重点掌握变分原理、微扰理论（post-HF 基础）；</p>
+  </li>
+  <li>
+    <p><strong>软件实践</strong>：用 Gaussian（分子）或 VASP（固体）做简单计算，如优化水分子结构、计算氢分子键能，将理论与结果对应；</p>
+  </li>
+  <li>
+    <p><strong>关键概念巩固</strong>：分子轨道、电子密度、势能面、自洽场（SCF）迭代 —— 这些是理解计算结果的核心。</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>（注：文档部分内容可能由 AI 生成）</p>
+</blockquote>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#入门" class="page__taxonomy-item" rel="tag">入门</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#量子力学" class="page__taxonomy-item" rel="tag">量子力学</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#科学原理" class="page__taxonomy-item" rel="tag">科学原理</a>
+    
+    </span>
+  </p>
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://bsky.app/intent/compose?text=http://localhost:4000/09/01/electronic-structure-class-0th" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/09/01/electronic-structure-class-0th" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/09/01/electronic-structure-class-0th" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="https://x.com/intent/post?text=http://localhost:4000/09/01/electronic-structure-class-0th" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+</section>
+
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/09/01/electronic-structure-class-1st" class="pagination--pager" title="量子力学与电子结构计算新手快速入门 [1]
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/09/14/AIDW-on-how_to_approach_AGI4S" class="pagination--pager" title="AI与科学交叉领域的核心认知与AGI4S发展路径研究报告
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/09/14/AIDW-on-review_AI4MS" rel="permalink">中国战略材料体系前沿调研：技术瓶颈与AI4S赋能路径分析报告
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-09-14T00:00:00+00:00">September 14, 2025</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>战略材料作为国家科技竞争力的核心载体，在新能源转型、信息技术革命、高端制造升级等领域发挥着不可替代的支撑作用。本报告系统梳理了我国九大战略材料体系的技术现状，深入剖析各细分领域的核心瓶颈，并重点探讨人工智能赋能科学发现（AI4S）在突破这些瓶颈中的适配性、应用优势及实施挑战。报告基于最新产业数据与科研进展，构建了”问题溯源-技术解析-AI方案”的分析框架，为战略材料领域的科研布局与产业升级提供参考。</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/09/14/AIDW-on-how_to_approach_AGI4S" rel="permalink">AI与科学交叉领域的核心认知与AGI4S发展路径研究报告
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-09-14T00:00:00+00:00">September 14, 2025</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>本报告借助与AI的多轮对谈会，系统梳理了AI与科学交叉领域的核心概念、技术范式及智能体系演进路径。</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/09/01/electronic-structure-class-1st" rel="permalink">量子力学与电子结构计算新手快速入门 [1]
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-09-01T00:00:00+00:00">September 01, 2025</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>简单地入门分子团簇的电子结构计算。</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/09/01/quantum-dynamics-class-1st" rel="permalink">局域相互作用与非局域相互作用——动力学中的量子效应
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
+
+
+  
+	  1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2025-09-01T00:00:00+00:00">September 01, 2025</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>介绍一些量子效应的引入。</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<a href="/sitemap/">Sitemap</a>
+
+<!-- Support for MatJax -->
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+<!-- Support for Plotly -->
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/plotly.js/3.0.1/plotly.min.js'></script>
+
+<!-- Support for Mermaid -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+    await mermaid.run({querySelector:'code.language-mermaid'});
+</script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="http://github.com/hexinzgca"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2025 He, Xin, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2025-09-15
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+    <!-- 关键：在 HTML 中用 <style> 标签定义背景图，Liquid 会正确解析变量 -->
+    <!-- 在 _layouts/default.html 或引用背景图的 HTML 中 -->
+      <style>
+        body {
+          background-image: url('/images/background/light-bg.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+        }
+
+        /* 夜晚模式背景图（覆盖白天模式） */
+        html[data-theme="dark"] body {
+          background-image: url('/images/background/dark-bg.png') !important;
+        }
+      </style>
+  </body>
+</html>
+

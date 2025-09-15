@@ -32,7 +32,7 @@
 
 
 
-  <link rel="canonical" href="https://hexinzgca.github.io/publication/2025-JCTC-10.1021_acs.jctc.5c00181">
+  <link rel="canonical" href="http://localhost:4000/publication/2025-JCTC-10.1021_acs.jctc.5c00181">
 
 
 
@@ -52,7 +52,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "He, Xin",
-      "url" : "https://hexinzgca.github.io",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -75,7 +75,7 @@
   <meta property="og:description" name="description" content="Reliable trajectory-based nonadiabatic quantum dynamics methods at the atomic level are critical for understanding many important processes in real systems. The paper reports latest progress of nonadiabatic field (NaF), a conceptually novel approach for nonadiabatic quantum dynamics with independent trajectories. Substantially different from the mainstreams of Ehrenfest-like dynamics and surface hopping methods, the nuclear force in NaF involves the nonadiabatic force arising from the nonadiabatic coupling between different electronic states, in addition to the adiabatic force contributed by a single adiabatic electronic state. NaF is capable of faithfully describing the interplay between electronic and nuclear motion in a broad regime, which covers where the relevant electronic states keep coupled in a wide range or all the time and where the bifurcation characteristic of nuclear motion is essential. NaF is derived from the exact generalized phase space formulation with coordinate-momentum variables, where constraint phase space (CPS) is employed for discrete electronic-state degrees of freedom. We propose efficient integrators for the equations of motion of NaF in both adiabatic and diabatic representations. Since the formalism in the CPS formulation is not unique, NaF can in principle be implemented with various phase space representations of the time correlation function (TCF) for the time-dependent property. They are applied to a suite of representative gas-phase and condensed-phase benchmark models where numerically exact results are available for comparison. It is shown that NaF is relatively insensitive to the phase space representation of the electronic TCF and will be a potential tool for practical and reliable simulations of the quantum mechanical behavior of both electronic and nuclear dynamics of nonadiabatic transition processes in real systems.">
 
 
-  <meta property="og:url" content="https://hexinzgca.github.io/publication/2025-JCTC-10.1021_acs.jctc.5c00181">
+  <meta property="og:url" content="http://localhost:4000/publication/2025-JCTC-10.1021_acs.jctc.5c00181">
 
 
 
@@ -83,7 +83,7 @@
 
 <!-- end Open Graph protocol -->
 
-<link href="https://hexinzgca.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="AI4S Research Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="AI4S Research Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -95,7 +95,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://hexinzgca.github.io/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
     
@@ -103,14 +103,14 @@
 <!-- start custom head snippets -->
 
 <!-- Support for Academicons -->
-<link rel="stylesheet" href="https://hexinzgca.github.io/assets/css/academicons.css"/>
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="apple-touch-icon" sizes="180x180" href="https://hexinzgca.github.io/images/apple-touch-icon-180x180.png"/>
-<link rel="icon" type="image/svg+xml" href="https://hexinzgca.github.io/images/favicon.svg"/>
-<link rel="icon" type="image/png" href="https://hexinzgca.github.io/images/favicon-32x32.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="https://hexinzgca.github.io/images/favicon-192x192.png" sizes="192x192"/>
-<link rel="manifest" href="https://hexinzgca.github.io/images/manifest.json"/>
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
@@ -131,28 +131,28 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="https://hexinzgca.github.io/">AI4S Research</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="http://localhost:4000/">AI4S Research</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/cv/">CV</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/publications/">Publications</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/group/">Group</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/group/">Group</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/talks/">Talks</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/talks/">Talks</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/teaching/">Teaching</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">Teaching</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/portfolio/">Portfolio</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Portfolio</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://hexinzgca.github.io/year-archive/">Blog & Fast-learning</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog & Fast-learning</a></li>
           
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
@@ -183,7 +183,7 @@
 
   <div class="author__avatar">
     
-    	<img src="https://hexinzgca.github.io/images/profile.png" class="author__avatar" alt="He, Xin"  fetchpriority="high" />
+    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="He, Xin"  fetchpriority="high" />
     
   </div>
 
@@ -273,7 +273,7 @@
     <!-- 赞助方logo -->
     
       <div class="sponsors-section">
-        <h3 class="sponsors-title">Sponsors</h3>
+        <h3 class="sponsors-title">Acknowledgement</h3>
         <div class="sponsors-logos">
           
             <img src="/images/sponsors/ZGCA-logo.png" 
@@ -354,13 +354,13 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://bsky.app/intent/compose?text=https://hexinzgca.github.io/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+  <a href="https://bsky.app/intent/compose?text=http://localhost:4000/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://hexinzgca.github.io/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://hexinzgca.github.io/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
-  <a href="https://x.com/intent/post?text=https://hexinzgca.github.io/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+  <a href="https://x.com/intent/post?text=http://localhost:4000/publication/2025-JCTC-10.1021_acs.jctc.5c00181" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
 </section>
 
 
@@ -369,7 +369,7 @@
 
   <nav class="pagination">
     
-      <a href="https://hexinzgca.github.io/publication/2025-phf-thesis" class="pagination--pager" title="PhD. Thesis: Trajectory-Based Nonadiabatic Dynamics Methods from Quantum Phase Space Formulation
+      <a href="http://localhost:4000/publication/2025-phf-thesis" class="pagination--pager" title="PhD. Thesis: Trajectory-Based Nonadiabatic Dynamics Methods from Quantum Phase Space Formulation
 ">Previous</a>
     
     
@@ -428,13 +428,13 @@
 
 <div class="page__footer-copyright">
   &copy; 2025 He, Xin, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-09-14
+  Site last updated 2025-09-15
 </div>
 
       </footer>
     </div>
 
-    <script type="module" src="https://hexinzgca.github.io/assets/js/main.min.js"></script>
+    <script type="module" src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 
